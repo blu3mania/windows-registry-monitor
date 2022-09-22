@@ -1,0 +1,24 @@
+name: Git diff Check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  Analyze:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Run git diff check
+        run: |
+          git config --global core.whitespace cr-at-eol,tab-in-indent
+          git diff --check HEAD^
