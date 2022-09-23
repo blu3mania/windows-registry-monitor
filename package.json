@@ -1,0 +1,31 @@
+{
+  "name": "windows-registry-monitor",
+  "version": "1.0.0",
+  "description": "A utility to monitor Windows registry for key/value changes",
+  "main": "lib/windows-registry.js",
+  "keywords": [
+    "registry",
+    "windows registry",
+    "monitor"
+  ],
+  "author": "blu3mania <blu3mania@hotmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/blu3mania/windows-registry-monitor#readme",
+  "bugs": {
+    "url": "https://github.com/blu3mania/windows-registry-monitor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blu3mania/windows-registry-monitor.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "os": [
+    "win32"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ffi-napi": "^4.0.3"
+  }
+}
