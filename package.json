@@ -1,6 +1,6 @@
 {
   "name": "windows-registry-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility to monitor Windows registry for key/value changes",
   "main": "lib/windows-registry.js",
   "keywords": [

@@ -177,3 +177,8 @@ Registry class also provides the normal registry operations:
 
   See [Monitor a registry key](#monitor-a-registry-key) section for description of registry value types and
   corresponding JavaScript value types.
+
+- disableLogging()
+  By default, methods in this package may log warnings and errors to console. If it's not desired, call this
+  method to turn off logging. Note, it does not turn off the warnings logged in finalizers when opened keys
+  and monitor tokens are not properly closed/stopped, because they indicate wrong usage of this package.
