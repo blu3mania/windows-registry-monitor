@@ -110,7 +110,7 @@ Required JavaScript value type for each registry value types are as below:
 
 For string types, Unicode strings are supported.
 
-When the monitor is no longer needed, *make sure to call stop()* to properly release the underlying
+When the monitor is no longer needed, **make sure to call stop()** to properly release the underlying
 handle obtained from Windows native API.
 
 ### Monitor a registry value
@@ -158,7 +158,7 @@ Registry class also provides the normal registry operations:
 
 - closeKey(key)
 
-  key is of type RegistryKey. Note, only call this method on keys opened from openKey(). Do not cal lit with
+  key is of type RegistryKey. Note, only call this method on keys opened from openKey(). Do not call it with
   monitor keys received in monitor callbacks. For them, call stop() on the obtained token instead (see above).
 
 - getValue(path, name)
