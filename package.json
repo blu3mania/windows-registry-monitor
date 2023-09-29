@@ -25,7 +25,7 @@
     "win32"
   ],
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.3.0",
     "ffi-napi": "^4.0.3"
   }
 }
