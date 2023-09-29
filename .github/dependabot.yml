@@ -6,3 +6,9 @@ updates:
     schedule:
       # Check for updates to GitHub actions once a week
       interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      # Check for updates to packages once a week
+      interval: "weekly"
